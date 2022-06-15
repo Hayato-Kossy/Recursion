@@ -6,9 +6,9 @@ def nthLuckyNumber(n):
     prime_3 = 0
 
     for number in range(1,n+1):
-        m2 = DP[prime_1] * 2;
-        m3 = DP[prime_2] * 3;
-        m5 = DP[prime_3] * 5;
+        m2 = DP[prime_1] * 2
+        m3 = DP[prime_2] * 3
+        m5 = DP[prime_3] * 5
 
         DP[number] = min(m2,min(m3,m5))
 
