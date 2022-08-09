@@ -1,7 +1,7 @@
 <?php
 
 function isMountain(array $height): bool{
-    $top = is_Up_in_middle($height);
+    $top = get_position_in_middle($height);
     $prev_record = $height[$top];
     $position = $top + 1;
 
@@ -14,7 +14,7 @@ function isMountain(array $height): bool{
     return true;
 }
 
-function is_Up_in_middle(array $height): int{
+function get_position_in_middle(array $height): int{
     $prev_record = $height[0];
     $verge = count($height) - 1;
     $position = 1;
