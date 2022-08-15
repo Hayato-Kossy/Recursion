@@ -34,3 +34,7 @@ def solution_under_1000(arabicNumber, index, ans):
 
     #print(arabicNumber)
     return solution_under_1000(arabicNumber // 10, index + 1, str_ans + ans)
+
+
+
+    
